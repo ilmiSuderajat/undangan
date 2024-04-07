@@ -1,0 +1,687 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+#hero::before{
+  content: "";
+  background-size: cover;
+  background-image: url(img/foto9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(50%);
+  animation: change infinite 10s;
+  
+}
+@keyframes change{
+ 
+  0%, 100%{
+    background-image: url(img/foto5.jpg);
+    
+    
+  }
+  40% {
+    background-image: url(img/foto9.jpg);
+  }
+  60%
+  {
+    background-image: url(img/foto7.jpg);
+    
+  }
+
+    
+  }
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 20%;
+    color: #e7e7e7;
+    
+  
+}
+.hero .yth .nama {
+  text-transform: capitalize;
+  padding: 10px auto;
+  filter: none;
+  color: gold;
+  font-size: 1.5em;
+  font-family: "Crete Round", serif;
+}
+.hero p {
+
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  filter: none;
+  margin-top: -20px;
+  
+}
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 3em;
+  
+}
+
+.hero .yth p {
+  font-size: 14px;
+  padding: 12px;
+}
+.yth {
+  margin-top: 100%;
+}
+.hero button {
+  width: 150px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  border-radius: 90px;
+  border: none;
+  margin-top: -5px;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  font-family: "Crete Round", serif;
+  
+}
+
+button img {
+  width: 20px;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-left:8px ;
+  
+}
+
+#true {
+  
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+    
+}
+
+#true::before {
+  content: "";
+  background-size: cover;
+  background-image: url(img/foto9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(50%);
+  animation: change 10s infinite;
+
+  
+}
+
+@keyframes slideshow {
+
+  0%, 100% {
+    background-image: url('img/foto5.jpg');
+  }
+
+  70% {
+    background-image: url('img/foto6.jpg');
+  }
+  
+}
+
+.weding {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.weding p {
+  font-family: "Crete Round", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  filter: none;
+  color: white;
+}
+
+.weding h1 {
+
+  font-family: "Sacramento", cursive;
+  font-size: 3em;
+  color: white;
+
+}
+
+.trulove {
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: grey;
+}
+
+#love {
+ 
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+#love::before{
+
+  content: "";
+  background-image: url(img/tes.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(90%);
+
+}
+
+.bg {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+  filter: none;
+  
+}
+
+
+.bg p {
+  margin-top: 25px;
+  font-size: 1.5em;
+  
+}
+.bg h1 {
+  font-size: 2em;
+  font-family: "Crete Round", serif;
+  font-weight: 100;
+  
+}
+.bgimg {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "right";
+}
+.lovetext1 {
+  width: 90%;
+  height: 100%;
+  margin: 10px auto;
+  border-radius: 5%;
+  border: 2px solid white;
+  background-image: url(img/foto9.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 2px rgb(70, 69, 69);
+}
+
+.lovetext {
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.bg .lovetext p {
+  font-family: "Crete Round", serif;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.bgimg p {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+}
+
+
+#merid {
+
+
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background-color: #FFF5E1;
+  filter: brightness(87%);
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "header header";
+  gap: 10px;
+  
+}
+.colom {
+  width: 100%;
+  height: 40%;
+  grid-area: header;
+  
+}
+
+.colom h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item {
+  
+  width: 100%;
+  height: 80%;
+  
+  
+  
+}
+.wadon {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: -70px;
+  
+}
+.wadon img {
+  width: 90%;
+  height: 120%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid salmon;
+  margin-top: 70px;
+  margin-left: auto;
+}
+.tekswadon {
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -60%;
+}
+.tekswadon h1 {
+  font-family: "Crete Round", serif;
+  font-weight: 100;
+  font-size: 2em;
+  margin: 10px auto;
+}
+.tekswadon .bpk {
+
+  font-family: "Crete Round", serif;
+  font-weight: bold;
+}
+#merid .item .tekswadon p {
+  font-family: "Crete Round", serif;
+  font-weight: 0;
+  
+}
+.tekswadon .ig {
+  margin: auto;
+  width: 100px;
+  height: 20px;
+  background-color: rgb(39, 39, 39);
+}
+
+.ig a {
+  color: white;
+  text-decoration: none;
+}
+
+.lanang {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  
+}
+
+.lanang img {
+
+  
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid salmon;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  
+}
+
+.tekslanang {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -70px;
+}
+
+.tekslanang h1 {
+
+  font-family: "Crete Round", serif;
+  font-weight: 100;
+  font-size: 2em;
+  margin: 10px auto;
+}
+
+.tekslanang .bpk {
+
+  font-family: "Crete Round", serif;
+  font-weight: bold;
+}
+
+.tekslanang p {
+
+  font-family: "Crete Round", serif;
+  font-weight: 0;
+}
+
+.tekslanang .ig2 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  background-color: rgb(39, 39, 39);
+}
+
+.ig2 a {
+  color: white;
+  text-decoration: none;
+}
+
+#date {
+
+  width: 100%;
+  height: 500px;
+  background-color: salmon;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "back back";
+  opacity: 2px;
+  
+  
+}
+
+.count {
+  grid-area: back;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  filter: brightness(99%);
+  border-radius: 15% ;
+  box-sizing: border-box;
+  box-shadow: 2px 5px 5px rgb(61, 60, 59);
+}
+.count h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.5em;
+  color: rgb(216, 117, 106);
+  opacity: 5px;
+  font-weight: bolder;
+  font-family: "Crete Round", serif;
+}
+
+.count p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: salmon;
+  font-family: "Crete Round", serif;
+
+}
+@media screen and (max-width: 400px) {
+  #date {
+
+    width: 100%;
+    height: 60vh;
+    background-color: salmon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "back back";
+    opacity: 2px;
+    
+    
+    
+  }
+  
+  .count {
+   
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    filter: brightness(99%);
+    border-radius: 15% ;
+    box-sizing: border-box;
+    box-shadow: 2px 5px 5px rgb(61, 60, 59);
+  }
+  .count h1 {
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(216, 117, 106);
+    opacity: 5px;
+    font-weight: bolder;
+    font-family: "Crete Round", serif;
+    
+    
+  }
+  
+  .count p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 0;
+    color: salmon;
+    font-family: "Crete Round", serif;
+    
+  }
+}
+
+#akad {
+
+  width: 100%;
+  height: 150vh;
+  background-color: rgb(160, 175, 180);
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "akad" "akad2";
+  gap: 50px;
+}
+.akadbg {
+  
+  width: 90%;
+  height: 95%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  box-sizing: border-box;
+  box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+  -webkit-box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+}
+.akadbg::before {
+  content: "";
+  background-image: url(img/foto7.jpg);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: brightness(70%);
+  
+}
+
+.teksakad {
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  filter: brightness(100%);
+  z-index: 1;
+  margin-top: 20px;
+  
+}
+
+.akad2 {
+    width: 90%;
+    height: 95%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-right-radius: 40%;
+    border-top-left-radius: 40%;
+    box-sizing: border-box;
+    box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+    -webkit-box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+    -moz-box-shadow: -2px -1px 14px 4px rgba(0,0,0,0.87);
+  }
+  .akad2::before {
+    content: "";
+    background-image: url(img/foto5.jpg);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: brightness(70%);
+  
+  }
+  
+ 
+  .teksakad h1 {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  .teksakad P {
+    font-size: 0.6em;
+   padding-right: 20px;
+   padding-left: 20px;
+  }
+  .teksakad a {
+    text-decoration: none;
+    background-color: white;
+    color: salmon;
+    font-size: 0.6em;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+
+  }
+
+  .teksakad2 {
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    filter: brightness(100%);
+    z-index: 1;
+    margin-top: 20px;
+    
+  }
+  .teksakad2 h1 {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  .teksakad2 P {
+    font-size: 0.6em;
+   padding-right: 20px;
+   padding-left: 20px;
+  }
+  .teksakad2 a {
+    text-decoration: none;
+    background-color: white;
+    color: salmon;
+    font-size: 0.6em;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+
+  }
+
+
+
+
