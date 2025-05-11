@@ -29,7 +29,7 @@ disableScroll()
 // untuk mendapatkan url //
 const urlParams = new URLSearchParams(window.location.search);
 const nama = urlParams.get('n') || '';
-const pronoun = urlParams.get('p') || 'Saha iye?';
+const pronoun = urlParams.get('p') || '';
 const namaContainer = document.querySelector('.nama');
 namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, '');
 
